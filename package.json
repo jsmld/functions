@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/jsmld/functions/issues"
   },
-  "homepage": "https://github.com/jsmld/functions#readme"
+  "homepage": "https://github.com/jsmld/functions#readme",
+  "devDependencies": {
+    "typescript": "^4.8.3"
+  }
 }
