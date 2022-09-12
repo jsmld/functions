@@ -9,3 +9,5 @@ const numberOfPairsInArray = (arr: any[]) => {
   let totalNumberOfPairs = pairCount.reduce((sum, x) => sum += x)
   return totalNumberOfPairs;
 }
+
+export default numberOfPairsInArray;
