@@ -1,12 +1,11 @@
-const numberOfPairsInArray = (arr: any[]) => {
-  let pairs = {};
+const numberOfPairsInArray = (arr: number[]): number => {
+  const pairs: Record<number, number> = {};
   arr.forEach(el => {
     pairs[el] ||= 0
     pairs[el] += 1
   })
-  //@ts-ignore
-  let pairCount = Object.values(pairs).map(val => Math.floor(val/2))
-  let totalNumberOfPairs = pairCount.reduce((sum, x) => sum += x)
+  const pairCount = Object.values(pairs).map(val => Math.floor(val/2))
+  const totalNumberOfPairs = pairCount.reduce((sum, x) => sum += x)
   return totalNumberOfPairs;
 }
 
