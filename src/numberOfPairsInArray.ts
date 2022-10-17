@@ -1,6 +1,6 @@
 // Takes an array of numbers and returns the number of pairs in the array.
 
-const numberOfPairsInArray = (arr: number[]): number => {
+export const numberOfPairsInArray = (arr: number[]): number => {
   const pairs: Record<number, number> = {};
   arr.forEach(el => {
     pairs[el] ||= 0
@@ -10,5 +10,3 @@ const numberOfPairsInArray = (arr: number[]): number => {
   const totalNumberOfPairs = pairCount.reduce((sum, x) => sum += x)
   return totalNumberOfPairs
 }
-
-export default numberOfPairsInArray
