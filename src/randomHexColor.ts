@@ -1,1 +1,3 @@
-const randomHexColor = () => '#' + Math.floor(Math.random()*16777215).toString(16);
+// Returns a random hex color.
+
+const randomHexColor = ():string => '#' + Math.floor(Math.random()*16777215).toString(16);

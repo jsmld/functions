@@ -1,3 +1,5 @@
+// Takes an array of numbers and returns the number of pairs in the array.
+
 const numberOfPairsInArray = (arr: number[]): number => {
   const pairs: Record<number, number> = {};
   arr.forEach(el => {
